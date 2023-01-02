@@ -71,6 +71,9 @@ const createWindow = async () => {
 
   mainWindow = new BrowserWindow({
     show: false,
+    fullscreen: process.env.NODE_ENV !== 'development' &&
+      process.env.DEBUG_PROD !== 'true',
+    autoHideMenuBar: true,
     width: 1024,
     height: 728,
     icon: getAssetPath('icon.png'),
