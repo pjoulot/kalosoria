@@ -1,6 +1,8 @@
 {
     "title": "Kalosoria",
     "exit": "Quitter",
+    "back": "Retour",
     "settings.title": "Paramètres",
-    "credits.title": "Crédits"
+    "credits.title": "Crédits",
+    "kalosoria.settings.language": "Langue"
 }

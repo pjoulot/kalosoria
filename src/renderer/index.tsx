@@ -1,11 +1,19 @@
 import { createRoot } from 'react-dom/client';
+import React from 'react';
 import App from './App';
 import './i18n';
-import {getSettingsStorage} from '../kalosoria/core/SettingsManager'
+import { Provider } from 'react-redux';
+import { store } from '../app/store';
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);
-root.render(<App />);
+root.render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </React.StrictMode>
+);
 
 
 // calling IPC exposed from preload script

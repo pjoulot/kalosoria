@@ -1,6 +1,8 @@
 {
     "title": "Kalosoria",
     "exit": "Exit",
+    "back": "Back",
     "settings.title": "Settings",
-    "credits.title": "Credits"
+    "credits.title": "Credits",
+    "kalosoria.settings.language": "Language"
 }

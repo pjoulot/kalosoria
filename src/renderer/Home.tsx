@@ -25,10 +25,10 @@ export default function Home() {
         <div className="Home__actions">
           <div className="Home__actions__inner">
             <Link to="settings">
-              Settings
+              {t('settings.title')}
             </Link>
             <Link to="credits">
-              Credits
+              {t('credits.title')}
             </Link>
             <button onClick={closeWindow}>{t('exit')}</button>
           </div>
